@@ -1,0 +1,50 @@
+/* Estilos para la estructura básica de la página */
+body {
+    font-family: Arial, sans-serif; /* Fuente general */
+    background-color: #f4f4f4; /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+}
+
+/* Contenedor del formulario */
+.form-container {
+    max-width: 400px; /* Ancho máximo */
+    margin: auto; /* Centrar el contenedor */
+    background: white; /* Fondo blanco */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Título del formulario */
+h2 {
+    text-align: center; /* Centrar el texto */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+/* Estilos para los inputs y el botón */
+input, button {
+    width: 100%; /* Ocupan todo el ancho */
+    padding: 5px; /* Espaciado interno */
+    margin-bottom: 15px; /* Espacio inferior */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Botón de envío */
+button {
+    background-color: #007BFF; /* Color azul */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambiar el cursor */
+}
+
+/* Cambio de color al pasar el mouse */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Mensaje de error */
+.error {
+    color: red; /* Texto rojo */
+    font-size: 14px; /* Tamaño de texto */
+}
