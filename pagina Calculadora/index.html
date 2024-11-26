@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario de Suma</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!-- Contenedor del formulario -->
+        <div class="form-container">
+            <h2>Calculadora</h2>
+            <form id="sum-form" action="Calculadora.php" method="post" novalidate>
+                <!-- Campo para el primer número -->
+                <input type="number" id="numero1" name="numero1" placeholder="Primer número" required>
+                <!-- Campo para el segundo número -->
+                <input type="number" id="numero2" name="numero2" placeholder="Segundo número" required>
+                <!-- Mensaje de error -->
+                <div id="error-message" class="error" style="display: none;"></div>
+                <label for=""> Selecione el tipo de calculo que desea hacer</label>
+                <br>
+                <select id="operacion" name="operacion"> 
+                    <option value="">selecione una opcion</option>
+                    <option value="1">Suma</option>
+                    <option value="2">Resta</option>
+                    <option value="3">Multiplicacion</option>
+                    <option value="4">Division</option>
+                </select>
+                <br>
+                <br>
+                <!-- Botón para enviar el formulario -->
+                <button type="submit">Calcular</button>
+            </form>
+        </div>
+
+        <script src="js/script.js"></script>
+    </body>
+    </html>
