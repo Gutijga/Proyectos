@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" type="image/x-icon" href="https://virtualaula.comfenalco.com.co/colegioibague/moodle/pluginfile.php?file=%2F1%2Ftheme_enlightlite%2Flogo%2F1724250521%2FLOGO-COLEGIO-01.png" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>COLEGIO COMFENALCO</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <div class="left-container">
+                <!-- Menú y los iconos están dentro del contenedor de la izquierda -->
+                <div class="menu-container">
+                    <button class="menu-button">Menú</button>
+                    <div class="menu-content">
+                        <a href="paginaprincipal.html">INICIO</a>
+                        <a href="gestion.html">COMUNICADOS</a>
+                        <a href="portales.html">NOTICIAS</a>
+                        <a href="contactos.html">CONTACTOS</a>
+                        <a href="circulares.html">CIRCULARES</a>
+                    </div>
+                </div>
+        
+                <!-- Iconos a la izquierda -->
+                <div class="icon-container">
+                    <i class="fas fa-share-square"></i>
+                    <a href="iniciosesion.html"><i class="fas fa-user"></i></a>
+                    <i class="fas fa-bell"></i>
+                </div>
+            </div>
+        
+            <!-- Buscador a la derecha -->
+            
+            <h1 class="h1">EQUIPO DE ORIENTACIÓN ESCOLAR COLEGIO COMFENALCO</h1>
+
+            <div class="image-container">
+                <img src="https://virtualaula.comfenalco.com.co/colegioibague/moodle/pluginfile.php?file=%2F1%2Ftheme_enlightlite%2Flogo%2F1724250521%2FLOGO-COLEGIO-01.png" alt="Imagen descriptiva">
+            </div>
+        </header>
+
+        <br>
+        </div>
+        <div class="carrusel">
+            <div class="carrusel-items">
+                <div class="carrusel-item"><img src="images/imagen 2 carrusel.png" alt="Imagen 1"></div>
+                <div class="carrusel-item"><img src="images/imagen 1 carrusel.png" alt="Imagen 2"></div>
+                <div class="carrusel-item"><img src="images/imagen 3 carrusel.png" alt="Imagen 3"></div>
+            </div>
+            <button class="carrusel-prev">&#10094;</button>
+            <button class="carrusel-next">&#10095;</button>
+        </div>
+        <div class="header-line">
+            <div class="dotted-line"></div>
+            <img src="https://png.pngtree.com/png-clipart/20230426/original/pngtree-lightbulb-line-icon-png-image_9107695.png" alt="Logo" class="logo">
+            <div class="dotted-line"></div>
+        </div>
+
+            <!-- Asistente virtual -->
+            <div class="virtual-assistant">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/User_icon_BLACK-01.png/640px-User_icon_BLACK-01.png" alt="Asistente Virtual" class="assistant-icon" onclick="showForm()">
+            </div>
+
+            <!-- Formulario del asistente virtual -->
+            <div id="assistant-form" class="form-container" style="display: none;">
+                <div class="form-content">
+                    <img src="https://virtualaula.comfenalco.com.co/colegioibague/moodle/pluginfile.php?file=%2F1%2Ftheme_enlightlite%2Flogo%2F1724250521%2FLOGO-COLEGIO-01.png" alt="Logo Colegio" class="logo-colegio">
+                        <h2>Formulario de Solicitud</h2>
+                        <form action="https://formsubmit.co/" method="POST">
+                       
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    
+                        <label for="correo">Correo Electrónico:</label>
+                        <input type="email" id="correo" name="correo" required>
+                    
+                        <label for="telefono">Teléfono:</label>
+                        <input type="text" id="telefono" name="telefono" required>
+                    
+                        <label for="documento">Documento de identidad:</label>
+                        <input type="text" id="documento" name="documento" required>
+                    
+                        <label for="tipo_solicitud">Tipo de Solicitud:</label>
+                        <select id="tipo_solicitud" name="tipo_solicitud" required>
+                            <option value="queja">Queja</option>
+                            <option value="sugerencia">Sugerencia</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    
+                        <label for="sugerencias">Sugerencias:</label>
+                        <input type="text" id="sugerencias" name="sugerencias" required>
+                    
+                        <label for="Contrasena">Contraseña</label>
+                        <div class="password-wrapper">
+                            <input type="password" id="Contrasena" name="Contrasena" required>
+                            <span class="toggle-password" onclick="togglePasswordVisibility()">
+                                <i id="password-icon" class="fa fa-eye"></i> <!-- Ícono del ojo -->
+                            </span>
+                        </div>
+                        <button type="submit">Guardar</button>
+                        <BR>   
+                        <div class="form-buttons">
+                            
+                            <button type="button" onclick="closeForm()">Cancelar</button>
+                        </div>
+                        <Script src="js/ojo.js"></Script>
+                    </form>
+                
+                </div>
+            </div>
+            <div class="section1">
+                <h2>EQUIPO DE ORIENTACIÓN ESCOLAR </h2>
+                <div class="cuadro">
+                    <p>En la Institución, nos comprometemos con el bienestar integral de nuestros estudiantes, nos enorgullecemos de ofrecer un servicio integral que abarca el respeto a la diversidad, la promoción de la salud mental, la sana convivencia y el apoyo en el rendimiento académico
+                        Nuestro equipo de orientación escolar está aquí para brindar apoyo emocional, académico y personal a todos los estudiantes, ofrecemos asesoramiento individual, talleres grupales y apoyo para el desarrollo de habilidades sociales,
+                        entendemos que cada estudiante es único, por lo que adaptamos nuestros servicios para satisfacer las necesidades individuales de cada uno. </p>
+                </div>
+            </div>
+            <br>
+            <br>
+        <div class="section2">
+            <h2>OBJETIVO</h2>
+            <div class="cuadro">
+                <p>Nuestro objetivo es crear un entorno seguro y comprensivo donde los estudiantes se sientan escuchados y apoyados en su crecimiento personal y académico.
+                    Además, trabajamos en estrecha colaboración con padres y profesores para garantizar que nuestros estudiantes reciban el mejor apoyo posible en su recorrido educativo. Creemos que el bienestar emocional es fundamental para el éxito académico, por lo que nos esforzamos por Promover un ambiente positivo y de apoyo en toda la comunidad escolar.
+                    Estamos dedicados a fomentar el bienestar de nuestros estudiantes y a ayudarlos a alcanzar su máximo potencial. ¡Estamos aquí trabajando continuamente para CUIDARTE!”<p>
+            </div>
+        </div>
+        <div class="header-line">
+            <div class="dotted-line"></div>
+            <img src="https://images.vexels.com/content/164151/preview/hand-finger-fist-s-letter-s-silhouette-708372.png" alt="Logo" class="logo">
+            <div class="dotted-line"></div>
+        </div>
+        <div class="section1">
+            <h2>APOYO ESCOLAR </h2>
+            <div class="cuadro">
+                <p>Resulta importante recordarles que, para cada uno de los ciclos desde el componente de APOYO ESCOLAR, hay un profesional orientador a su disposición, compartimos sus nombre y medios de contacto en caso de que nos requieran, con gusto les atenderemo.</p>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+            <br>
+        
+
+        <table class="custom-table">
+            <thead>
+                <tr>
+                    
+                    <th><center> CICLO</center></th>
+                    <th><center>PROFESIONAL GRUPO DE APOYO ASIGNADO</center></th>
+                    <th><center>CORREO ELECTRÓNICO</center></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1 y 2 (Transición a sexto)</td>
+                    <td> <button class="month-buttonn" data-month="Margarita">Margarita Agudelo Alzate - Psicóloga</button></td>
+                    <td><a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=4765445b-32c6-49b0-83e6-1d93765276ca&redirect_uri=https%3A%2F%2Fwww.office.com%2Flandingv2&response_type=code%20id_token&scope=openid%20profile%20https%3A%2F%2Fwww.office.com%2Fv2%2FOfficeHome.All&response_mode=form_post&nonce=638631353667553225.NGZhZTc0ZDgtODQ5ZS00NzY1LWIwZjUtOTNiZGE4YTBjODA4ZGJjMmU4YzItMzhjYS00MDZiLWEyYTQtZGVlYWJiM2MyNWMx&ui_locales=es-US&mkt=es-US&client-request-id=75457ec1-fca5-4004-9c78-1eb008a5f2cd&state=5ocoO7BYRdQBNErc1Mhw8UqokFAm2rvseFs_eSeeg6ApPcWdFHjgjRbEOcf2HkEOfmHELjwp_yuw6Uy0eQ8WHzWjPjf0yTwBSbZqZkOd0R-VJaUAKYkVZ_B_jjAHKTgBH0Wn4ceLdzacw-lYFipfvw2phPCWHLojtKdXwK7q6BukBx9Zwv6OB2oPYChM5KzDcix5n_gBcdDq8TSSsXbp6ndQta4xxQunh-WplsyUi4_iwXx3icJVUeojp90NAbdcfZlDdWzX4ydBZLGz6UXx1g&x-client-SKU=ID_NET8_0&x-client-ver=7.5.1.0">margarita.agudelo@colegiocomenfalcoibague.edu.co</a></td>
+                    
+                    
+                </tr>
+                <tr>
+                    <td>3 y 4 (Séptimo a Once)</td>
+                    <td><button class="month-buttonn" data-month="Sandra">Sandra Elena Zarabanda Capera - Psicóloga</button></td>
+                    <td><a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=4765445b-32c6-49b0-83e6-1d93765276ca&redirect_uri=https%3A%2F%2Fwww.office.com%2Flandingv2&response_type=code%20id_token&scope=openid%20profile%20https%3A%2F%2Fwww.office.com%2Fv2%2FOfficeHome.All&response_mode=form_post&nonce=638631353667553225.NGZhZTc0ZDgtODQ5ZS00NzY1LWIwZjUtOTNiZGE4YTBjODA4ZGJjMmU4YzItMzhjYS00MDZiLWEyYTQtZGVlYWJiM2MyNWMx&ui_locales=es-US&mkt=es-US&client-request-id=75457ec1-fca5-4004-9c78-1eb008a5f2cd&state=5ocoO7BYRdQBNErc1Mhw8UqokFAm2rvseFs_eSeeg6ApPcWdFHjgjRbEOcf2HkEOfmHELjwp_yuw6Uy0eQ8WHzWjPjf0yTwBSbZqZkOd0R-VJaUAKYkVZ_B_jjAHKTgBH0Wn4ceLdzacw-lYFipfvw2phPCWHLojtKdXwK7q6BukBx9Zwv6OB2oPYChM5KzDcix5n_gBcdDq8TSSsXbp6ndQta4xxQunh-WplsyUi4_iwXx3icJVUeojp90NAbdcfZlDdWzX4ydBZLGz6UXx1g&x-client-SKU=ID_NET8_0&x-client-ver=7.5.1.0">sandra.zarabanda@colegiocomenfalcoibague.edu.co</a></td>
+                </tr>
+                <tr>
+                    <td>1, 2, 3, 4 (Transición a once)</td>
+                    <td><button class="month-buttonn" data-month="Norma"> Norma Yohana Franco - Psicopedagoga</button></td>
+                    <td><a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=4765445b-32c6-49b0-83e6-1d93765276ca&redirect_uri=https%3A%2F%2Fwww.office.com%2Flandingv2&response_type=code%20id_token&scope=openid%20profile%20https%3A%2F%2Fwww.office.com%2Fv2%2FOfficeHome.All&response_mode=form_post&nonce=638631353667553225.NGZhZTc0ZDgtODQ5ZS00NzY1LWIwZjUtOTNiZGE4YTBjODA4ZGJjMmU4YzItMzhjYS00MDZiLWEyYTQtZGVlYWJiM2MyNWMx&ui_locales=es-US&mkt=es-US&client-request-id=75457ec1-fca5-4004-9c78-1eb008a5f2cd&state=5ocoO7BYRdQBNErc1Mhw8UqokFAm2rvseFs_eSeeg6ApPcWdFHjgjRbEOcf2HkEOfmHELjwp_yuw6Uy0eQ8WHzWjPjf0yTwBSbZqZkOd0R-VJaUAKYkVZ_B_jjAHKTgBH0Wn4ceLdzacw-lYFipfvw2phPCWHLojtKdXwK7q6BukBx9Zwv6OB2oPYChM5KzDcix5n_gBcdDq8TSSsXbp6ndQta4xxQunh-WplsyUi4_iwXx3icJVUeojp90NAbdcfZlDdWzX4ydBZLGz6UXx1g&x-client-SKU=ID_NET8_0&x-client-ver=7.5.1.0">norma.franco@colegiocomenfalcoibague.edu.co</a></td>
+                </tr>
+                <tr>
+                    <td>1, 2, 3, 4 (Transición a once)</td>
+                    
+                    <td><button class="month-buttonn" data-month="Maria">María Isabel Cabra Mateus - Fonoaudióloga</button></td>
+                    <td><a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=4765445b-32c6-49b0-83e6-1d93765276ca&redirect_uri=https%3A%2F%2Fwww.office.com%2Flandingv2&response_type=code%20id_token&scope=openid%20profile%20https%3A%2F%2Fwww.office.com%2Fv2%2FOfficeHome.All&response_mode=form_post&nonce=638631353667553225.NGZhZTc0ZDgtODQ5ZS00NzY1LWIwZjUtOTNiZGE4YTBjODA4ZGJjMmU4YzItMzhjYS00MDZiLWEyYTQtZGVlYWJiM2MyNWMx&ui_locales=es-US&mkt=es-US&client-request-id=75457ec1-fca5-4004-9c78-1eb008a5f2cd&state=5ocoO7BYRdQBNErc1Mhw8UqokFAm2rvseFs_eSeeg6ApPcWdFHjgjRbEOcf2HkEOfmHELjwp_yuw6Uy0eQ8WHzWjPjf0yTwBSbZqZkOd0R-VJaUAKYkVZ_B_jjAHKTgBH0Wn4ceLdzacw-lYFipfvw2phPCWHLojtKdXwK7q6BukBx9Zwv6OB2oPYChM5KzDcix5n_gBcdDq8TSSsXbp6ndQta4xxQunh-WplsyUi4_iwXx3icJVUeojp90NAbdcfZlDdWzX4ydBZLGz6UXx1g&x-client-SKU=ID_NET8_0&x-client-ver=7.5.1.0">maria.cabra@colegiocomenfalcoibague.edu.co</a></td>
+                </tr>
+            </tbody>
+        </table>  
+        
+        <!-- Popup para mostrar el PDF -->
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close-btn"> &times;</span>
+                <iframe id="pdf-viewer" class="pdf-viewer" src="" type="application/pdf"></iframe>
+            </div>
+        </div>
+        <script src="js/psicologia.js"></script>
+        <div class="header-line">
+            <div class="dotted-line"></div>
+            <img src="https://static.vecteezy.com/system/resources/previews/009/664/620/non_2x/pencil-icon-transparent-free-png.png" alt="Logo2" class="logo2">
+            <div class="dotted-line"></div>
+        </div>          
+        <h1 class="ACTIVIDADES">ACTIVIDADES</h1>
+        <div class="container">
+
+            <div class="grid">
+
+                
+                <a href="https://colegiocomfenalcoibague.edu.co/wp-content/uploads/2024/08/ACTIVIDADES_DE_ORIENTACION_ESCOLAR_SEMESTRE_I.pdf" class="item">Actividades Orientación escolar semestre I</a>
+                <a href="https://colegiocomfenalcoibague.edu.co/wp-content/uploads/2024/08/ACTIVIDADES_ORIENTACION_ESCOLAR_SEMESTRE_II.pdf" class="item">Actividades Orientación escolar semestre II</a>
+                <a href="https://view.genially.com/662839d2a3393900146f7124/learning-experience-didactic-unit-informe-actividades-gestion-comunidad-2024" class="item">Actividades Fortalecimiento del Ser</a>
+                <a href="https://colegiocomfenalcoibague.edu.co/wp-content/uploads/2024/08/ORIENTACION_VOCACIONAL_EXPLORANDO_POSIBILIDADES.pdf" class="item">Programa de orientaciónvocacional y <br>profesional: explorando posibilidades</a>
+                <a href="https://colegiocomfenalcoibague.edu.co/wp-content/uploads/2024/08/Tips_para_mejorar_tu_desempeno_academico.pdf" class="item">Tips para mejorar tu desempeño académico</a>
+                <a href="https://colegiocomfenalcoibague.edu.co/wp-content/uploads/2024/08/Cuida_tu_salud_mental.pdf" class="item">Bienestar emocional: promoviendo la salud mental<br> de la comunidad educativa</a>
+                
+                
+                
+            
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <footer class="py-5 bg-dark"></footer>
+            <div class="g-container">                                <div class="g-grid">                        
+                <center>
+                 <div class="g-block size-100">
+                 <div id="custom-1690-particle" class="g-content g-particle">            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1294.187897940357!2d-75.15823702399304!3d4.409002938810054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe96b934c15dd50e8!2sColegio+Comfenalco+Ibague!5e0!3m2!1ses-419!2sco!4v1505169320959" width="1200" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                  <br>
+                  <br>  
+                 <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; Copyright © 2024 Colegio Comfenalco Ibagué Unidad TI | Comfenalco Tolima</p></div>
+            </div>
+         </div>
+         </div>
+        </footer>
+    </body>
+</html>
+                

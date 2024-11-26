@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f4f8;
+}
+
+.loader {
+    border: 8px solid rgba(0, 0, 0, 0.1); /* Fondo tenue del loader */
+    border-radius: 50%;
+    border-top: 8px solid #4caf50; /* Color de la animación */
+    width: 80px;
+    height: 80px;
+    animation: spin 1.5s linear infinite, color-change 2s linear infinite;
+    position: relative;
+}
+
+.loader::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255,255,255,0.2) 50%, rgba(0,0,0,0) 70%);
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes color-change {
+    0%, 100% { border-top-color: #4caf50; }
+    50% { border-top-color: #ffffff; }
+}
+
+@keyframes pulse {
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+}

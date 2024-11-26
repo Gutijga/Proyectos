@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    text-align: center;
+    justify-items: center;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.calendar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.month {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 280px;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.month h2 {
+    background-color: #4CAF50;
+    color: white;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1px;
+    background-color: #ddd;
+}
+
+.day {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.date {
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1em;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.date:nth-child(7n+1) {
+    color: #FF5722;
+}
+
+.date:nth-child(7n) {
+    color: #2196F3;
+}
+
+.date:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

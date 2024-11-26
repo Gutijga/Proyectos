@@ -1,0 +1,580 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+header {
+    background-color: #1fad45;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Esto alinea el contenido a izquierda y derecha */
+    padding: 25px 20px;
+}
+
+.left-container {
+    display: flex;
+    align-items: center;
+}
+
+.menu-container {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-button:hover {
+    background-color: #3e8e41;
+}
+
+.menu-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.menu-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.menu-container:hover .menu-content {
+    display: block;
+}
+
+.bar {
+    height: 3px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.menu-text {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.menu-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #43c766;
+    border: 1px solid black;
+    width: 200px;
+}
+
+.menu-options a {
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none; /* Asegurarse de que no haya subrayado */
+    font-family: Arial, sans-serif;
+    border-bottom: 1px solid black;
+}
+
+.menu-options a:hover {
+    background-color: #43c766;
+}
+
+.menu-options span {
+    float: right;
+}
+
+/* Iconos alineados a la izquierda junto con el menú */
+.icon-container {
+    display: flex;
+    align-items: center;
+}
+
+.icon-container i {
+    font-size: 24px;
+    margin-right: 15px;
+    color: #fff; /* Color blanco para que los íconos resalten sobre el fondo verde */
+}
+
+.icon-container i:hover {
+    color: #ddd; /* Cambia el color al pasar sobre el ícono */
+}
+
+/* Buscador alineado a la derecha */
+.search-container {
+    display: flex;
+    justify-content: flex-end;
+    justify-items: center;
+}
+
+.search-container form {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    background-color: #fff;
+    padding: 5px;
+}
+
+.search-container input[type="text"] {
+    border: none;
+    outline: none;
+    padding: 5px 5px;
+    border-radius: 100px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.search-container button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0px;
+}
+
+.search-container button i {
+    color: #333;
+    font-size: 16px;
+}
+
+.search-container input[type="text"]::placeholder {
+    color: #aaa;
+}
+
+
+/* Imagen a la derecha del buscador */
+.image-container {
+    display: flex;
+    align-items: center;
+    margin-left: 20px; /* Espacio entre el buscador y la imagen */
+}
+
+.image-container img {
+    height: 80px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    width: auto; /* Mantiene la relación de aspecto */
+}
+
+.header-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+.dotted-line {
+    width: 45%;
+    height: 2px;
+    border-top: 2px dashed black;
+}
+
+.logo {
+    width: 40px;
+    height: auto;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.item {
+    background-color: #4CAF50;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.item:hover {
+    background-color: #45a049;
+}
+
+.carrusel {
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carrusel-items {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrusel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carrusel-item img {
+    width: 100%;
+    display: block;
+}
+
+.carrusel-prev,
+.carrusel-next {
+    position: absolute;
+    top: 60%;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+.carrusel-prev {
+    left: 10px;
+}
+
+.carrusel-next {
+    right: 10px;
+}
+
+
+/* Estilos del asistente virtual */
+.virtual-assistant {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+/* Icono del asistente virtual */
+.assistant-icon {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos del formulario emergente */
+.form-container {
+    position: fixed;
+    top: 20%;
+    right: 20%;
+    width: 300px; /* Tamaño ajustado del formulario */
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Contenido del formulario */
+.form-content {
+    width: 100%;
+}
+
+/* Logo del colegio en el formulario */
+.logo-colegio {
+    width: 100px; /* Tamaño del logo ajustado */
+    height: auto;
+    display: block;
+    margin: 0 auto 15px; /* Centrado del logo y margen inferior */
+}
+
+/* Título del formulario */
+h2 {
+    font-size: 18px; /* Tamaño de fuente ajustado */
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center; /* Centrado del título */
+}
+
+/* Estilos para los campos del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+form input, form select, form textarea {
+    width: calc(100% - 22px); /* Ajustar el ancho para incluir padding */
+    padding: 10px;
+    font-size: 14px; /* Tamaño de fuente ajustado */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Espacio ajustado entre campos */
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus, form select:focus, form textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Estilo para el área de texto */
+textarea {
+    resize: vertical;
+}
+
+/* Estilo de los botones */
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+button {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px; /* Tamaño de fuente ajustado */
+    transition: background-color 0.3s ease;
+    flex: 1;
+    margin: 0 5px;
+    text-decoration: none; /* Asegurarse de que no haya subrayado en los enlaces */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Botón de cancelar */
+button[type="button"] {
+    background-color: #e53935; /* Rojo */
+}
+
+button[type="button"]:hover {
+    background-color: #c62828;
+}
+
+
+.grid a {
+    text-decoration: none; /* Eliminar subrayado de los enlaces */
+}
+
+.item {
+    background-color: #4CAF50;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    display: block; /* Asegurar que el enlace ocupe todo el espacio del contenedor */
+}
+
+.item:hover {
+    background-color: #45a049;
+}
+
+
+.password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-wrapper input {
+    flex: 1;
+    padding-right: 40px; /* Añadir espacio para el ícono del ojo */
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+.toggle-password i {
+    font-size: 18px;
+    color: #333;
+}
+
+ /*mision y vision*/
+.container {
+    display: flex;
+    gap: 50px;
+    justify-content: space-around;
+    padding: 20px;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+.section1 {
+    background-color: #d6e9d9; 
+    border-radius: 30px;
+    padding: 20px;
+    width: auto;
+    border: 10px solid #9bcb94;
+   position: center;
+}
+.section2 {
+    background-color: #d6e9d9;
+    border-radius: 30px;
+    padding: 20px;
+    width: auto;
+    border: 10px solid #9bcb94;
+   position: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #2a4826;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .section {
+        width: 100%;
+    }
+}
+
+
+
+
+.buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.month-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.month-button:hover {
+    background-color: #218838;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+    position: relative;
+}
+
+.pdf-viewer {
+    width: 100%;
+    height: 600px;
+    border: none;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.popup.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.contact-box {
+    width: 170px;
+    max-width: 60%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+
+.contact-info {
+    padding: 10px;
+}
+
+.contact-info h2 {
+    color: #28a745;
+    margin-top: 0;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+h1{
+    color: #ffffff;
+}
+.CIRCULARES{
+    color: #000;
+}
